@@ -46,6 +46,10 @@ export class App extends Component {
   }
 
   addName = value => {
+    if (this.state.keyword === value) {
+      return alert(`Sorry! You are already watching ${value}`);
+    }
+    this.closeModal();
     this.setState({
       keyword: value,
       page: 1,
