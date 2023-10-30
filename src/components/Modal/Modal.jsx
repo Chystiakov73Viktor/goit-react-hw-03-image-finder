@@ -3,12 +3,12 @@ import css from './Modal.module.css';
 
 export class Modal extends Component {
   componentDidMount() {
-    window.addEventListener('keydown', this.hendleKeyDown);
+    window.addEventListener('keydown', this.handleKeyDown);
     document.body.style.overflow = 'hidden';
   }
 
   componentWillUnmount() {
-    window.removeEventListener('keydown', this.hendleKeyDown);
+    window.removeEventListener('keydown', this.handleKeyDown);
     document.body.style.overflow = 'visible';
   }
 
@@ -18,7 +18,7 @@ export class Modal extends Component {
     }
   };
 
-  hendleKeyDown = event => {
+  handleKeyDown = event => {
     if (event.code === 'Escape') {
       this.props.closeModal();
     }

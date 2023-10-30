@@ -6,6 +6,7 @@ export const ImageGalleryItem = ({
   tags,
   openModal,
 }) => {
+
   return (
     <li
       onClick={() => openModal({ largeImageURL, tags })}

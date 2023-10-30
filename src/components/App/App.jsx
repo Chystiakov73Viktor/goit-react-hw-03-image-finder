@@ -6,7 +6,6 @@ import { Loader } from 'components/Loader/Loader';
 import { Button } from 'components/Button/Button';
 import { fetchCardURL } from 'services/api';
 import { Modal } from 'components/Modal/Modal';
-
 import css from './App.module.css';
 
 export class App extends Component {
